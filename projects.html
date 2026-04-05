@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects | Krishan Kumar Awasthi</title>
+    
+    <!-- SEO & Open Graph -->
+    <meta name="description" content="A complete gallery of full-stack and mobile projects by Krishan Kumar Awasthi (KKA). Featuring Flutter, React, and Node.js solutions.">
+    <meta property="og:title" content="Portfolio Gallery — Krishan Kumar Awasthi">
+    <meta property="og:description" content="View the complete collection of web and mobile applications developed by KKA.">
+    <meta property="og:image" content="krishan1.jpeg">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="krishan1.jpeg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="projects-page">
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Navigation Logo & Back Button Group -->
+    <a href="index.html" class="btn btn-back-home">
+        <i class="fas fa-arrow-left"></i>
+        <span>Back to Home</span>
+    </a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="nav-logo">
+            <span class="logo-bracket">&lt;</span>KKA<span class="logo-bracket">/&gt;</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="projects.html" class="nav-link active">Projects</a></li>
+        </ul>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle Theme">
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <header class="projects-page-header">
+        <div class="container text-center">
+            <span class="section-tag" style="display: block; margin-bottom: 0.5rem;">&lt;portfolio&gt;</span>
+            <h1 class="section-title">Complete <span class="highlight">Portfolio</span></h1>
+            <p style="max-width: 600px; margin: 1rem auto; color: var(--text-secondary); line-height: 1.6;">
+                A comprehensive showcase of my work in mobile development, full-stack systems, and UI/UX design.
+            </p>
+            <div class="section-line" style="margin: 0 auto;"></div>
+        </div>
+    </header>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <section class="section">
+        <div class="container">
+            <div class="projects-grid-horizontal">
+                
+                <!-- Project 1: CheckMate Pro -->
+                <article class="project-card project-card-featured" data-tilt data-tilt-max="3">
+                    <div class="project-image project-image-chess">
+                        <div class="chess-card-hero">
+                            <img src="logo.png" alt="CheckMate Pro" class="project-logo-img chess-logo-img" loading="lazy">
+                            <div class="chess-action-buttons">
+                                <a href="https://checkmate-pro-in.vercel.app/" target="_blank" class="btn btn-primary chess-btn"><i class="fas fa-external-link-alt"></i><span>Live Demo</span></a>
+                                <a href="https://github.com/Dev-Krishan-Kumar-Awasthi" target="_blank" class="btn btn-secondary chess-btn"><i class="fab fa-github"></i><span>GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-featured-header">
+                            <div class="project-category" style="color: var(--accent-secondary);">♟️ Flagship Project — Full Stack Mobile App</div>
+                            <span class="project-status-badge">🔨 Active Development</span>
+                        </div>
+                        <h2 class="project-title">CheckMate Pro <span class="title-ver">v2.0</span></h2>
+                        <p class="project-description">A production-grade online chess platform built with Flutter & Node.js — real-time multiplayer, Stockfish AI, Elo matchmaking, and anti-cheat.</p>
+                        <div class="chess-features-grid">
+                            <div class="chess-feature"><i class="fas fa-chess-knight"></i><span>Real-Time Multiplayer (Socket.io)</span></div>
+                            <div class="chess-feature"><i class="fas fa-robot"></i><span>AI Bot — Stockfish 16 Engine</span></div>
+                            <div class="chess-feature"><i class="fas fa-shield-alt"></i><span>Anti-Cheat & Fair Play Analysis</span></div>
+                            <div class="chess-feature"><i class="fas fa-chart-line"></i><span>Advanced Elo Matchmaking</span></div>
+                        </div>
+                        <div class="project-tech chess-tech">
+                            <span class="tech-flutter">Flutter</span><span class="tech-node">Node.js</span><span class="tech-socket">Socket.io</span><span class="tech-supabase">Supabase</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 2: QuickPassportPhoto -->
+                <article class="project-card project-card-featured project-card-photo" data-tilt data-tilt-max="3">
+                    <div class="project-image project-image-photo">
+                        <div class="photo-card-hero">
+                            <img src="quickpassportphoto_logo_light_1773979392710.png" alt="QuickPassportPhoto Logo" class="project-logo-img photo-logo-img" loading="lazy">
+                            <div class="chess-action-buttons">
+                                <a href="https://quick-passport-photo.vercel.app/" target="_blank" class="btn btn-primary photo-btn"><i class="fas fa-external-link-alt"></i><span>Visit Site</span></a>
+                                <a href="https://github.com/Dev-Krishan-Kumar-Awasthi/QuickPassportPhoto" target="_blank" class="btn btn-outline photo-btn"><i class="fab fa-github"></i><span>GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-featured-header">
+                            <div class="project-category" style="color: #00e676;">📸 AI Managed SaaS</div>
+                            <span class="project-status-badge photo-status-badge">🚀 Production Ready</span>
+                        </div>
+                        <h2 class="project-title">QuickPassportPhoto <span class="title-ver">v1.0</span></h2>
+                        <p class="project-description">AI background removal and biometric cropping for professional ID photos. Turn a 15-minute Photoshop task into 15 seconds.</p>
+                        <div class="chess-features-grid">
+                            <div class="chess-feature"><i class="fas fa-magic"></i><span>In-Browser AI BG Removal</span></div>
+                            <div class="chess-feature"><i class="fas fa-user-check"></i><span>Face-API Biometric Cropping</span></div>
+                            <div class="chess-feature"><i class="fas fa-file-pdf"></i><span>High-Res Print-Ready Export</span></div>
+                            <div class="chess-feature"><i class="fas fa-credit-card"></i><span>Razorpay Integration</span></div>
+                        </div>
+                        <div class="project-tech chess-tech">
+                            <span class="tech-nextjs">Next.js 16</span><span class="tech-react">React 19</span><span class="tech-tailwind">Tailwind 4</span><span class="tech-supabase">Supabase</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 3: Anoop Rathore Portfolio -->
+                <article class="project-card project-card-featured project-card-prof" data-tilt data-tilt-max="3">
+                    <div class="project-image project-image-prof">
+                        <div class="prof-card-hero">
+                            <img src="annop sir.jpg" alt="Anoop Rathore" class="project-logo-img prof-logo-img" loading="lazy">
+                            <div class="chess-action-buttons">
+                                <a href="https://anoop-rathore.vercel.app/" target="_blank" class="btn btn-primary prof-btn"><i class="fas fa-external-link-alt"></i><span>Visit Site</span></a>
+                                <a href="https://github.com/Dev-Krishan-Kumar-Awasthi/Anoop-Rathore" target="_blank" class="btn btn-outline prof-btn"><i class="fab fa-github"></i><span>GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-featured-header">
+                            <div class="project-category" style="color: #ffd700;">🎓 Premium Academic Showcase</div>
+                            <span class="project-status-badge prof-status-badge">✨ Live Case Study</span>
+                        </div>
+                        <h2 class="project-title">Anoop Rathore <span class="title-ver">IIT-G</span></h2>
+                        <p class="project-description">A high-end professional portfolio for a CSE educator with custom interactions, YouTube integration, and research showcased.</p>
+                        <div class="chess-features-grid">
+                            <div class="chess-feature"><i class="fas fa-mouse-pointer"></i><span>Custom Reactive Cursor Experience</span></div>
+                            <div class="chess-feature"><i class="fas fa-play-circle"></i><span>Dynamic YouTube Grid Integration</span></div>
+                            <div class="chess-feature"><i class="fas fa-scroll"></i><span>Smooth Parallax Scrolling</span></div>
+                            <div class="chess-feature"><i class="fas fa-search"></i><span>SEO & Schema Optimization</span></div>
+                        </div>
+                        <div class="project-tech chess-tech">
+                            <span class="tech-js">JS ES6+</span><span class="tech-gsap">GSAP</span><span class="tech-seo">SEO</span><span class="tech-vercel">Vercel</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 4: Maharana Pratap Website -->
+                <article class="project-card project-card-featured" style="background: rgba(22, 11, 44, 0.4); border-color: rgba(0, 160, 255, 0.2);" data-tilt data-tilt-max="3">
+                    <div class="project-image" style="background: linear-gradient(135deg, #001a1a, #003333);">
+                        <div class="chess-card-hero" style="background: transparent;">
+                            <img src="maharana pratap website.png" alt="Maharana Pratap Website" class="project-logo-img school-logo-img" loading="lazy">
+                            <div class="chess-action-buttons">
+                                <a href="https://maharanaprataschool.vercel.app/" target="_blank" class="btn btn-primary" style="background: #00f0ff; color: #001a1a;"><i class="fas fa-external-link-alt"></i><span>Visit Site</span></a>
+                                <a href="https://github.com/Dev-Krishan-Kumar-Awasthi" target="_blank" class="btn btn-outline" style="border-color: #00f0ff;"><i class="fab fa-github"></i><span>GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-featured-header">
+                            <div class="project-category" style="color: #00f0ff;">🏫 Educational Web Platform</div>
+                            <span class="project-status-badge" style="border-color: #00f0ff; color: #00f0ff;">🚀 Production Ready</span>
+                        </div>
+                        <h2 class="project-title">Maharana Pratap Website <span class="title-ver">v1.2</span></h2>
+                        <p class="project-description">A premium school website with advanced SEO, glassmorphism UI, and interactive gallery for students and staff.</p>
+                        <div class="chess-features-grid">
+                            <div class="chess-feature"><i class="fas fa-images"></i><span>Dynamic Photo Gallery</span></div>
+                            <div class="chess-feature"><i class="fas fa-paper-plane"></i><span>Inquiry Submission Logic</span></div>
+                            <div class="chess-feature"><i class="fas fa-bolt"></i><span>Lightning-Fast Performance</span></div>
+                            <div class="chess-feature"><i class="fas fa-mobile-alt"></i><span>Fully Responsive Design</span></div>
+                        </div>
+                        <div class="project-tech chess-tech">
+                            <span style="background: rgba(0, 240, 255, 0.1); border: 1px solid rgba(0, 240, 255, 0.2); color: #00f0ff; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">HTML5</span>
+                            <span style="background: rgba(0, 240, 255, 0.1); border: 1px solid rgba(0, 240, 255, 0.2); color: #00f0ff; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">CSS3</span>
+                            <span style="background: rgba(0, 240, 255, 0.1); border: 1px solid rgba(0, 240, 255, 0.2); color: #00f0ff; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">Particles.js</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 5: Annapurna Delivery App -->
+                <article class="project-card project-card-featured" style="background: rgba(13, 8, 30, 0.4); border-color: rgba(227, 79, 38, 0.2);" data-tilt data-tilt-max="3">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1a0d00, #4d2600);">
+                        <div class="chess-card-hero">
+                            <img src="Annapurna app logo.png" alt="Annapurna App" class="project-logo-img delivery-logo-img" loading="lazy">
+                            <div class="chess-action-buttons">
+                                <a href="#" target="_blank" class="btn btn-primary" style="background: #ff6d00; color: #fff;"><i class="fas fa-external-link-alt"></i><span>Visit Site</span></a>
+                                <a href="https://github.com/Dev-Krishan-Kumar-Awasthi" target="_blank" class="btn btn-outline" style="border-color: #ff6d00; color: #ff6d00;"><i class="fab fa-github"></i><span>GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-featured-header">
+                            <div class="project-category" style="color: #ff6d00;">🍔 Full-Stack Delivery Ecosystem</div>
+                            <span class="project-status-badge" style="border-color: #ff6d00; color: #ff6d00;">🚀 Stage: Beta</span>
+                        </div>
+                        <h2 class="project-title">Annapurna App <span class="title-ver">Mobile</span></h2>
+                        <p class="project-description">A real-time delivery application for restaurants and customers. Built with Flutter for smooth cross-platform performance.</p>
+                        <div class="chess-features-grid">
+                            <div class="chess-feature"><i class="fas fa-map-marked-alt"></i><span>Real-Time Order Tracking</span></div>
+                            <div class="chess-feature"><i class="fas fa-shopping-cart"></i><span>Secure Payment Gateway</span></div>
+                            <div class="chess-feature"><i class="fas fa-bell"></i><span>Push Notifications (FCM)</span></div>
+                            <div class="chess-feature"><i class="fas fa-user-circle"></i><span>User Profile & History</span></div>
+                        </div>
+                        <div class="project-tech chess-tech">
+                            <span style="background: rgba(255, 109, 0, 0.1); border: 1px solid rgba(255, 109, 0, 0.2); color: #ff6d00; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">Flutter</span>
+                            <span style="background: rgba(255, 109, 0, 0.1); border: 1px solid rgba(255, 109, 0, 0.2); color: #ff6d00; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">Supabase</span>
+                            <span style="background: rgba(255, 109, 0, 0.1); border: 1px solid rgba(255, 109, 0, 0.2); color: #ff6d00; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">Firebase</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 6: Annapurna Admin -->
+                <article class="project-card project-card-featured" style="background: rgba(13, 8, 30, 0.4); border-color: rgba(123, 47, 247, 0.2);" data-tilt data-tilt-max="3">
+                    <div class="project-image" style="background: linear-gradient(135deg, #0d001a, #26004d);">
+                        <div class="chess-card-hero">
+                            <img src="annapurna admin page logo.png" alt="Annapurna Admin" class="project-logo-img admin-logo-img" loading="lazy">
+                            <div class="chess-action-buttons">
+                                <a href="#" target="_blank" class="btn btn-primary" style="background: #7b2ff7;"><i class="fas fa-external-link-alt"></i><span>Visit Site</span></a>
+                                <a href="https://github.com/Dev-Krishan-Kumar-Awasthi" target="_blank" class="btn btn-outline" style="border-color: #7b2ff7; color: #7b2ff7;"><i class="fab fa-github"></i><span>GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-featured-header">
+                            <div class="project-category" style="color: #7b2ff7;">⚙️ Centralized Management</div>
+                            <span class="project-status-badge" style="border-color: #7b2ff7; color: #7b2ff7;">🚀 Stage: Beta</span>
+                        </div>
+                        <h2 class="project-title">Annapurna Dashboard <span class="title-ver">Admin</span></h2>
+                        <p class="project-description">Complete command center for the delivery app. Manage menus, orders, users, and real-time analytics from a single dashboard.</p>
+                        <div class="chess-features-grid">
+                            <div class="chess-feature"><i class="fas fa-chart-pie"></i><span>Real-Time Sales Analytics</span></div>
+                            <div class="chess-feature"><i class="fas fa-utensils"></i><span>Menu & Product CRUD</span></div>
+                            <div class="chess-feature"><i class="fas fa-clipboard-list"></i><span>Live Order Management</span></div>
+                            <div class="chess-feature"><i class="fas fa-image"></i><span>Integrated Image Cropper</span></div>
+                        </div>
+                        <div class="project-tech chess-tech">
+                            <span style="background: rgba(123, 47, 247, 0.1); border: 1px solid rgba(123, 47, 247, 0.2); color: #7b2ff7; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">React</span>
+                            <span style="background: rgba(123, 47, 247, 0.1); border: 1px solid rgba(123, 47, 247, 0.2); color: #7b2ff7; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">Node.js</span>
+                            <span style="background: rgba(123, 47, 247, 0.1); border: 1px solid rgba(123, 47, 247, 0.2); color: #7b2ff7; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">Supabase</span>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project 7: Portfolio -->
+                <article class="project-card project-card-featured" style="background: rgba(13, 8, 30, 0.4); border-color: rgba(255, 45, 170, 0.2);" data-tilt data-tilt-max="3">
+                    <div class="project-image" style="background: linear-gradient(135deg, #1a000d, #4d0026);">
+                        <div class="chess-card-hero">
+                            <img src="krishan1.jpeg" alt="Krishan Kumar Awasthi" class="project-logo-img prof-logo-img" loading="lazy" style="border-color: rgba(255, 45, 170, 0.3); box-shadow: 0 0 30px rgba(255, 45, 170, 0.2);">
+                            <div class="chess-action-buttons">
+                                <a href="index.html" target="_blank" class="btn btn-primary" style="background: #ff2daa;"><i class="fas fa-external-link-alt"></i><span>Visit Site</span></a>
+                                <a href="https://github.com/Dev-Krishan-Kumar-Awasthi" target="_blank" class="btn btn-outline" style="border-color: #ff2daa; color: #ff2daa;"><i class="fab fa-github"></i><span>GitHub</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-featured-header">
+                            <div class="project-category" style="color: #ff2daa;">🎨 Premium Digital Portfolio</div>
+                            <span class="project-status-badge" style="border-color: #ff2daa; color: #ff2daa;">✨ Perfectionized</span>
+                        </div>
+                        <h2 class="project-title">Current Portfolio <span class="title-ver">v2.0</span></h2>
+                        <p class="project-description">The very site you're exploring. Built with Three.js for 3D backgrounds and GSAP for state-of-the-art animations.</p>
+                        <div class="chess-features-grid">
+                            <div class="chess-feature"><i class="fas fa-cube"></i><span>Three.js 3D Backgrounds</span></div>
+                            <div class="chess-feature"><i class="fas fa-magic"></i><span>GSAP Advanced Animations</span></div>
+                            <div class="chess-feature"><i class="fas fa-mouse"></i><span>Custom Reactive Cursor</span></div>
+                            <div class="chess-feature"><i class="fas fa-moon"></i><span>Multiple Premium Themes</span></div>
+                        </div>
+                        <div class="project-tech chess-tech">
+                            <span style="background: rgba(255, 45, 170, 0.1); border: 1px solid rgba(255, 45, 170, 0.2); color: #ff2daa; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">Three.js</span>
+                            <span style="background: rgba(255, 45, 170, 0.1); border: 1px solid rgba(255, 45, 170, 0.2); color: #ff2daa; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">GSAP</span>
+                            <span style="background: rgba(255, 45, 170, 0.1); border: 1px solid rgba(255, 45, 170, 0.2); color: #ff2daa; padding: 0.3rem 0.8rem; border-radius: 50px; font-size: 0.8rem;">JavaScript</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 4rem 0; text-align: center; border-top: 1px solid rgba(255,255,255,0.05);">
+        <p style="color: var(--text-secondary);">&copy; 2026 Krishan Kumar Awasthi. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Re-initialize tilt for dynamic cards
+        VanillaTilt.init(document.querySelectorAll("[data-tilt]"), {
+            max: 5,
+            speed: 400
+        });
+    </script>
+</body>
+</html>
